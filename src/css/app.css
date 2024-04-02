@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#root {
+	margin: 0 auto;
+	width: 30%;
+	min-width: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.App {
+	margin-top: 200px;
+	padding: 10px;
+	box-shadow: rgba(15, 126, 238, 0.2) 0px 8px 24px;
+	border-radius: 10px;
+	width: 100%;
+}
+
+.header {
+	margin-bottom: 20px;
+	padding: 10px;
+	background: rgb(44, 44, 44);
+	color: white;
+	border-radius: 10px;
+	position: static;
+}
+
+.logoside {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.logoside > svg {
+	font-size: 1.5rem;
+	margin: 0 10px;
+	animation: spin 6s linear infinite;
+	color: greenyellow;
+}
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
